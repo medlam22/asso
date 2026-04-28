@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualités - MMSDS Association</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .news-card {
+            display: flex;
+            background: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+            margin-bottom: 30px;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+        .news-card:hover {
+            box-shadow: var(--hover-shadow);
+            transform: translateY(-3px);
+        }
+        .news-img {
+            width: 30%;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 3rem;
+            min-height: 200px;
+        }
+        .news-content {
+            padding: 25px;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .news-meta {
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .news-title {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: var(--dark-color);
+        }
+        @media (max-width: 768px) {
+            .news-card {
+                flex-direction: column;
+            }
+            .news-img {
+                width: 100%;
+                height: 200px;
+            }
+            .news-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/MSDDS.png" alt="MMSDS Logo" style="height: 60px;">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">À propos</a></li>
+                    <li class="nav-item"><a href="objectives.html" class="nav-link">Objectifs</a></li>
+                    <li class="nav-item"><a href="activities.html" class="nav-link">Activités</a></li>
+                    <li class="nav-item"><a href="instances.html" class="nav-link">Instances</a></li>
+                    <li class="nav-item"><a href="partners.html" class="nav-link">Partenaires</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link">Galerie</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link active">Actualités</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Actualités</h1>
+            <p>Restez informés des dernières annonces et appels à communications.</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto;">
+                
+                <!-- News 1 -->
+                <div class="news-card">
+                    <div class="news-img"><i class="fas fa-bullhorn"></i></div>
+                    <div class="news-content">
+                        <div class="news-meta"><i class="far fa-calendar-alt"></i> 15 Mai 2026 | Appel à communication</div>
+                        <h3 class="news-title">Appel à communication pour le Congrès MMSDS 2026</h3>
+                        <p style="color: #666; margin-bottom: 15px;">La soumission des résumés pour la prochaine édition du congrès est désormais ouverte. Date limite : 30 Juin 2026.</p>
+                        <a href="#" class="btn btn-secondary" style="align-self: flex-start; padding: 6px 15px; font-size: 0.9em;">Lire la suite</a>
+                    </div>
+                </div>
+
+                <!-- News 2 -->
+                <div class="news-card">
+                    <div class="news-img"><i class="fas fa-newspaper"></i></div>
+                    <div class="news-content">
+                        <div class="news-meta"><i class="far fa-calendar-alt"></i> 10 Avril 2026 | Annonce d'événement</div>
+                        <h3 class="news-title">Nouveau partenariat avec l'Université X</h3>
+                        <p style="color: #666; margin-bottom: 15px;">Nous sommes fiers d'annoncer la signature d'une convention de partenariat visant à promouvoir la mobilité des chercheurs.</p>
+                        <a href="#" class="btn btn-secondary" style="align-self: flex-start; padding: 6px 15px; font-size: 0.9em;">Lire la suite</a>
+                    </div>
+                </div>
+
+                <!-- News 3 -->
+                <div class="news-card">
+                    <div class="news-img"><i class="fas fa-file-alt"></i></div>
+                    <div class="news-content">
+                        <div class="news-meta"><i class="far fa-calendar-alt"></i> 05 Mars 2026 | Compte-rendu</div>
+                        <h3 class="news-title">Succès de la première journée d'étude Data Science</h3>
+                        <p style="color: #666; margin-bottom: 15px;">Retour sur la journée d'étude qui a réuni plus de 150 participants autour des enjeux de l'intelligence artificielle.</p>
+                        <a href="#" class="btn btn-secondary" style="align-self: flex-start; padding: 6px 15px; font-size: 0.9em;">Lire la suite</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center mt-4">
+                <button class="btn btn-primary">Charger plus d'actualités</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 MMSDS Association. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

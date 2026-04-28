@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Statut de l'Association - MMSDS</title>
+<meta name="description" content="Statut de l'association MMSDS - Morocco Modeling, Statistic and Data Science.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .statut-container {
+    max-width: 900px;
+    margin: 120px auto 60px;
+    padding: 40px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  }
+  .section-dark .statut-container {
+    background: #1a1a1a;
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  }
+  .statut-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .statut-header h1 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  .statut-chapter {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 10px;
+  }
+  .statut-chapter h2 {
+    color: var(--primary);
+    font-size: 1.8rem;
+  }
+  .statut-article {
+    margin-bottom: 25px;
+  }
+  .statut-article h3 {
+    color: var(--secondary);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .statut-article p, .statut-article ul {
+    color: var(--gray-700);
+    line-height: 1.7;
+    margin-bottom: 10px;
+  }
+  .section-dark .statut-article p, .section-dark .statut-article ul {
+    color: var(--gray-300);
+  }
+  .statut-article ul {
+    padding-left: 20px;
+  }
+  .statut-article li {
+    margin-bottom: 8px;
+  }
+  .statut-footer {
+    margin-top: 50px;
+    text-align: right;
+    font-style: italic;
+    color: var(--gray-600);
+  }
+</style>
+</head>
+<body>
+<!-- HEADER -->
+<header class="header" id="header" style="background: rgba(255,255,255,0.95); box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+<div class="header-inner">
+<a href="index.html" class="logo">
+<img src="img/logo.png" alt="MMSDS Logo" class="logo-img">
+<div class="logo-text" data-fr="MMSDS" data-ar="MMSDS">MMSDS<span data-fr="Association Scientifique" data-ar="جمعية علمية">Association Scientifique</span></div>
+</a>
+<nav class="nav" id="mainNav">
+<a href="index.html#accueil" data-fr="Accueil" data-ar="الرئيسية">Accueil</a>
+<a href="index.html#apropos" data-fr="À propos" data-ar="من نحن">À propos</a>
+<a href="index.html#bureau" data-fr="Bureau" data-ar="المكتب">Bureau</a>
+<a href="index.html#activites" data-fr="Activités" data-ar="الأنشطة">Activités</a>
+<a href="index.html#adhesion" data-fr="Adhésion" data-ar="الانخراط">Adhésion</a>
+<a href="index.html#partenaires" data-fr="Partenaires" data-ar="الشركاء">Partenaires</a>
+<a href="statut.html" class="active" data-fr="Statut" data-ar="القانون الأساسي">Statut</a>
+<a href="index.html#contact" data-fr="Contact" data-ar="اتصل بنا">Contact</a>
+<button class="lang-btn" id="langBtn" onclick="toggleLang()">AR</button>
+</nav>
+<button class="menu-toggle" id="menuToggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+</div>
+</header>
+
+<div style="background-color: var(--bg-color); min-height: 100vh; padding-top: 20px;">
+<div class="container">
+<div class="statut-container fade-in">
+  <div class="statut-header">
+    <h1 data-fr="Statut de l'Association" data-ar="القانون الأساسي للجمعية">Statut de l'Association</h1>
+    <h3 data-fr="Morocco Modeling, Statistic and Data Science (MMSDS)" data-ar="جمعية المغرب للنمذجة والإحصاء وعلوم البيانات (MMSDS)">Morocco Modeling, Statistic and Data Science (MMSDS)</h3>
+  </div>
+
+  <div class="statut-chapter">
+    <h2 data-fr="Chapitre I : Dispositions générales" data-ar="الباب الأول: مقتضيات عامة">Chapitre I : Dispositions générales</h2>
+  </div>
+  
+  <div class="statut-article">
+    <h3 data-fr="Article 1 : Constitution et dénomination" data-ar="المادة 1: التأسيس والتسمية">Article 1 : Constitution et dénomination</h3>
+    <p data-fr="Il est fondé entre les adhérents au présent statut une association régie par les lois du Maroc ayant pour nom : Morocco Modeling, Statistic and Data Science « MMSDS »." data-ar="تأسست بين المنخرطين في هذا القانون الأساسي جمعية خاضعة للقوانين المغربية تحمل اسم: جمعية المغرب للنمذجة والإحصاء وعلوم البيانات « MMSDS ».">Il est fondé entre les adhérents au présent statut une association régie par les lois du Maroc ayant pour nom : Morocco Modeling, Statistic and Data Science « MMSDS ».</p>
+    <p data-fr="L'association est régie par les dispositions du Dahir n° 1.58.376 du 5 Joumada I 1378 (15 novembre 1958) réglementant le droit de constituer des associations, tel que modifié et complété." data-ar="تخضع الجمعية لمقتضيات الظهير الشريف رقم 1.58.376 الصادر في 5 جمادى الأولى 1378 (15 نوفمبر 1958) المنظم لحق تأسيس الجمعيات، كما تم تعديله وتتميمه.">L'association est régie par les dispositions du Dahir n° 1.58.376 du 5 Joumada I 1378 (15 novembre 1958) réglementant le droit de constituer des associations, tel que modifié et complété.</p>
+  </div>
+
+  <div class="statut-article">
+    <h3 data-fr="Article 2 : Siège social" data-ar="المادة 2: المقر">Article 2 : Siège social</h3>
+    <p data-fr="Le siège social est situé dans un local de la Faculté des Sciences d’Oujda (FSO), boulevard Mohammed VI, BP 717, Oujda 60000." data-ar="يوجد المقر في فضاء بكلية العلوم بوجدة، شارع محمد السادس، صندوق البريد 717، وجدة 60000.">Le siège social est situé dans un local de la Faculté des Sciences d’Oujda (FSO), boulevard Mohammed VI, BP 717, Oujda 60000.</p>
+    <p data-fr="Il pourra être transféré par simple décision du bureau d'administration." data-ar="يمكن نقله بقرار بسيط من المكتب المسير.">Il pourra être transféré par simple décision du bureau d'administration.</p>
+  </div>
+
+  <div class="statut-article">
+    <h3 data-fr="Article 3 : Durée" data-ar="المادة 3: المدة">Article 3 : Durée</h3>
+    <p data-fr="La durée de l’association est illimitée." data-ar="مدة الجمعية غير محدودة.">La durée de l’association est illimitée.</p>
+  </div>
+
+  <div class="statut-article">
+    <h3 data-fr="Article 4 : Objectifs" data-ar="المادة 4: الأهداف">Article 4 : Objectifs</h3>
+    <p data-fr="1. L'association a pour but de promouvoir l’utilisation et l'avancement des connaissances dans les domaines suivants : modélisation, statistique, économétrie, data science, probabilités, stochastique, finance et intelligence artificielle." data-ar="1. تهدف الجمعية إلى تشجيع استخدام وتقدم المعرفة في المجالات التالية: النمذجة، الإحصاء، الاقتصاد القياسي، علم البيانات، الاحتمالات، العمليات العشوائية، المالية والذكاء الاصطناعي.">1. L'association a pour but de promouvoir l’utilisation et l'avancement des connaissances dans les domaines suivants : modélisation, statistique, économétrie, data science, probabilités, stochastique, finance et intelligence artificielle.</p>
+    <p data-fr="2. Les objectifs de l'association sont les suivants :" data-ar="2. أهداف الجمعية هي كالتالي:">2. Les objectifs de l'association sont les suivants :</p>
+    <ul>
+      <li data-fr="Organiser et mettre en œuvre des activités de recherche et des activités scientifiques dans les domaines concernés." data-ar="تنظيم وتنفيذ أنشطة البحث والأنشطة العلمية في المجالات المعنية.">Organiser et mettre en œuvre des activités de recherche et des activités scientifiques dans les domaines concernés.</li>
+      <li data-fr="Fournir un environnement encourageant pour les chercheurs et les personnes intéressées par les domaines concernés." data-ar="توفير بيئة مشجعة للباحثين والمهتمين بالمجالات المعنية.">Fournir un environnement encourageant pour les chercheurs et les personnes intéressées par les domaines concernés.</li>
+      <li data-fr="Élaborer des enquêtes et des sondages pour une prise de décision fondée sur les données." data-ar="إعداد استطلاعات ودراسات لاتخاذ قرارات مبنية على البيانات.">Élaborer des enquêtes et des sondages pour une prise de décision fondée sur les données.</li>
+      <li data-fr="Développer des partenariats et coopérations, aux niveaux local, national et international, avec les universités, instituts de recherche, organismes publics et acteurs socio-économiques, afin de favoriser l’échange d’expertise, de promouvoir la recherche et le développement et de faciliter la valorisation des résultats sur le terrain." data-ar="تطوير شراكات وتعاون على المستويات المحلية والوطنية والدولية، مع الجامعات ومعاهد البحث والهيئات العامة والفاعلين السوسيو-اقتصاديين، من أجل تعزيز تبادل الخبرات وتشجيع البحث والتطوير وتسهيل تثمين النتائج في الميدان.">Développer des partenariats et coopérations, aux niveaux local, national et international, avec les universités, instituts de recherche, organismes publics et acteurs socio-économiques, afin de favoriser l’échange d’expertise, de promouvoir la recherche et le développement et de faciliter la valorisation des résultats sur le terrain.</li>
+      <li data-fr="Promouvoir la recherche scientifique et organiser des conférences et des séminaires nationaux et internationaux dans les domaines concernés." data-ar="تشجيع البحث العلمي وتنظيم مؤتمرات وندوات وطنية ودولية في المجالات المعنية.">Promouvoir la recherche scientifique et organiser des conférences et des séminaires nationaux et internationaux dans les domaines concernés.</li>
+      <li data-fr="Accorder, dans la limite des ressources disponibles et selon des modalités fixées par le règlement intérieur, des bourses et/ou un soutien financier aux étudiants et aux chercheurs menant des projets dans les domaines concernés." data-ar="منح منح دراسية و/أو دعم مالي للطلاب والباحثين الذين يجرون مشاريع في المجالات المعنية، في حدود الموارد المتاحة ووفقًا للإجراءات المحددة في النظام الداخلي.">Accorder, dans la limite des ressources disponibles et selon des modalités fixées par le règlement intérieur, des bourses et/ou un soutien financier aux étudiants et aux chercheurs menant des projets dans les domaines concernés.</li>
+      <li data-fr="Contribuer à la formation et organiser des ateliers éducatifs de vulgarisation, et développer les compétences des étudiants et des professionnels dans les domaines concernés." data-ar="المساهمة في التكوين وتنظيم ورشات تعليمية لتبسيط العلوم، وتطوير مهارات الطلاب والمهنيين في المجالات المعنية.">Contribuer à la formation et organiser des ateliers éducatifs de vulgarisation, et développer les compétences des étudiants et des professionnels dans les domaines concernés.</li>
+      <li data-fr="Créer des plateformes et des forums pour échanger des connaissances et de l'expertise entre les spécialistes et les personnes intéressées par les domaines concernés." data-ar="إنشاء منصات ومنتديات لتبادل المعرفة والخبرات بين المتخصصين والمهتمين بالمجالات المعنية.">Créer des plateformes et des forums pour échanger des connaissances et de l'expertise entre les spécialistes et les personnes intéressées par les domaines concernés.</li>
+    </ul>
+  </div>
+
+  <div class="statut-chapter">
+    <h2 data-fr="Chapitre II : Composition de l'association" data-ar="الباب الثاني: تكوين الجمعية">Chapitre II : Composition de l'association</h2>
+  </div>
+
+  <div class="statut-article">
+    <h3 data-fr="Article 5 : Composition" data-ar="المادة 5: التكوين">Article 5 : Composition</h3>
+    <p data-fr="L’association se compose de :" data-ar="تتكون الجمعية من:">L’association se compose de :</p>
+    <ul>
+      <li data-fr="Membres d’honneur ;" data-ar="أعضاء شرفيين؛">Membres d’honneur ;</li>
+      <li data-fr="Membres bienfaiteurs ;" data-ar="أعضاء داعمين؛">Membres bienfaiteurs ;</li>
+      <li data-fr="Membres actifs (ou adhérents)." data-ar="أعضاء نشيطين (أو منخرطين).">Membres actifs (ou adhérents).</li>
+    </ul>
+    <p data-fr="Peuvent adhérer à l’association, conformément aux conditions prévues par le règlement intérieur, toute personne intéressée par les domaines de la modélisation, de la statistique, de la science des données et de l’intelligence artificielle, notamment les chercheurs, enseignants, professionnels et étudiants." data-ar="يمكن الانخراط في الجمعية، وفقا للشروط المنصوص عليها في النظام الداخلي، لكل شخص مهتم بمجالات النمذجة، الإحصاء، علم البيانات والذكاء الاصطناعي، ولا سيما الباحثين والأساتذة والمهنيين والطلاب.">Peuvent adhérer à l’association, conformément aux conditions prévues par le règlement intérieur, toute personne intéressée par les domaines de la modélisation, de la statistique, de la science des données et de l’intelligence artificielle, notamment les chercheurs, enseignants, professionnels et étudiants.</p>
+    <p data-fr="Les membres à jour de leur cotisation ont le droit de participer aux assemblées générales et de bénéficier des services de l’association." data-ar="يحق للأعضاء الذين أدوا واجبات انخراطهم المشاركة في الجموع العامة والاستفادة من خدمات الجمعية.">Les membres à jour de leur cotisation ont le droit de participer aux assemblées générales et de bénéficier des services de l’association.</p>
+  </div>
+
+  <div class="statut-article">
+    <h3 data-fr="Article 6 : Droits des membres" data-ar="المادة 6: حقوق الأعضاء">Article 6 : Droits des membres</h3>
+    <p data-fr="Les membres de l’association ont les droits suivants :" data-ar="يتمتع أعضاء الجمعية بالحقوق التالية:">Les membres de l’association ont les droits suivants :</p>
+    <ul>
+      <li data-fr="Participer à l’assemblée générale de l’association, prendre connaissance à l’avance de l’ordre du jour, recevoir la convocation dans les délais et exercer le droit de vote (réservé aux membres actifs à jour de leur cotisation)." data-ar="المشاركة في الجمع العام للجمعية، والاطلاع المسبق على جدول الأعمال، وتلقي الدعوة في الآجال المحددة وممارسة حق التصويت (مخصص للأعضاء النشيطين الذين أدوا واجبات انخراطهم).">Participer à l’assemblée générale de l’association, prendre connaissance à l’avance de l’ordre du jour, recevoir la convocation dans les délais et exercer le droit de vote (réservé aux membres actifs à jour de leur cotisation).</li>
+      <li data-fr="Formuler des remarques sur les points inscrits à l’ordre du jour de l’assemblée générale et proposer des ajouts pour l’enrichir." data-ar="إبداء ملاحظات حول النقط المدرجة في جدول أعمال الجمع العام واقتراح إضافات لإثرائه.">Formuler des remarques sur les points inscrits à l’ordre du jour de l’assemblée générale et proposer des ajouts pour l’enrichir.</li>
+      <li data-fr="Être informés des questions relatives à l’association par l’intermédiaire de ses organes et des structures prévues à cet effet." data-ar="الاطلاع على القضايا المتعلقة بالجمعية من خلال أجهزتها والهياكل المخصصة لذلك.">Être informés des questions relatives à l’association par l’intermédiaire de ses organes et des structures prévues à cet effet.</li>
+      <li data-fr="Exercer les autres droits prévus par les présents statuts et le règlement intérieur de l’association." data-ar="ممارسة الحقوق الأخرى المنصوص عليها في هذا القانون الأساسي والنظام الداخلي للجمعية.">Exercer les autres droits prévus par les présents statuts et le règlement intérieur de l’association.</li>
+    </ul>
+  </div>
+
+  <div class="statut-article">
+    <h3 data-fr="Article 7 : Obligations des membres" data-ar="المادة 7: التزامات الأعضاء">Article 7 : Obligations des membres</h3>
+    <p data-fr="Tout membre de l'association doit se conformer strictement aux exigences du présent statut et du règlement intérieur de l'association." data-ar="يجب على كل عضو في الجمعية الالتزام الصارم بمقتضيات هذا القانون الأساسي والنظام الداخلي للجمعية.">Tout membre de l'association doit se conformer strictement aux exigences du présent statut et du règlement intérieur de l'association.</p>
+  </div>
+
+  <div class="statut-article">
+    <h3 data-fr="Article 8 : Perte de la qualité de membre" data-ar="المادة 8: فقدان صفة العضوية">Article 8 : Perte de la qualité de membre</h3>
+    <p data-fr="Un membre de l'association perd sa qualité de membre de l'association par :" data-ar="يفقد عضو الجمعية صفته كعضو في الجمعية بسبب:">Un membre de l'association perd sa qualité de membre de l'association par :</p>
+    <ul>
+      <li data-fr="Le décès." data-ar="الوفاة.">Le décès.</li>
+      <li data-fr="La démission." data-ar="الاستقالة.">La démission.</li>
+      <li data-fr="La radiation prononcée par l'assemblée générale sur proposition du bureau administratif à l'encontre de toute personne ayant commis une faute grave ou en contradiction avec les objectifs de l'association définis ci-dessus." data-ar="التشطيب الصادر عن الجمع العام باقتراح من المكتب المسير في حق كل شخص ارتكب خطأ جسيما أو تصرفا يتناقض مع أهداف الجمعية المحددة أعلاه.">La radiation prononcée par l'assemblée générale sur proposition du bureau administratif à l'encontre de toute personne ayant commis une faute grave ou en contradiction avec les objectifs de l'association définis ci-dessus.</li>
+    </ul>
+  </div>
+
+  <div class="statut-article">
+    <h3 data-fr="Article 9 : Gestion" data-ar="المادة 9: التسيير">Article 9 : Gestion</h3>
+    <ul>
+      <li data-fr="L'association est dirigée par un bureau d'administration élu par l'assemblée générale." data-ar="تسير الجمعية من قبل مكتب مسير ينتخبه الجمع العام.">L'association est dirigée par un bureau d'administration élu par l'assemblée générale.</li>
+      <li data-fr="Le bureau d'administration est composé d'un président, d'un vice-président, d'un secrétaire général, d'un secrétaire général adjoint, d'un trésorier, d'un trésorier adjoint et des conseillers." data-ar="يتكون المكتب المسير من رئيس، ونائب للرئيس، وكاتب عام، ونائب للكاتب العام، وأمين للمال، ونائب لأمين المال ومستشارين.">Le bureau d'administration est composé d'un président, d'un vice-président, d'un secrétaire général, d'un secrétaire général adjoint, d'un trésorier, d'un trésorier adjoint et des conseillers.</li>
+      <li data-fr="Le bureau d'Administration gère les affaires de l'association et met en œuvre les décisions de l'assemblée générale." data-ar="يدبر المكتب المسير شؤون الجمعية وينفذ قرارات الجمع العام.">Le bureau d'Administration gère les affaires de l'association et met en œuvre les décisions de l'assemblée générale.</li>
+    </ul>
+  </div>
+
+  <div class="statut-chapter">
+    <h2 data-fr="Chapitre III : Les organes de l'association" data-ar="الباب الثالث: أجهزة الجمعية">Chapitre III : Les organes de l'association</h2>
+  </div>
+
+  <div class="statut-article">
+    <h3 data-fr="Article 10 : Assemblée générale" data-ar="المادة 10: الجمع العام">Article 10 : Assemblée générale</h3>
+    <ul>
+      <li data-fr="L’assemblée générale est l’organe suprême de l’association." data-ar="الجمع العام هو الجهاز الأعلى للجمعية.">L’assemblée générale est l’organe suprême de l’association.</li>
+      <li data-fr="Elle se compose des membres actifs de l’association." data-ar="يتكون من الأعضاء النشيطين للجمعية.">Elle se compose des membres actifs de l’association.</li>
+      <li data-fr="À titre consultatif, les membres d’honneur ainsi que toute personne dont la présence est jugée nécessaire ou utile par le président peuvent assister à l’assemblée générale." data-ar="بصفة استشارية، يمكن للأعضاء الشرفيين وكل شخص يعتبر الرئيس حضوره ضروريا أو مفيدا حضور الجمع العام.">À titre consultatif, les membres d’honneur ainsi que toute personne dont la présence est jugée nécessaire ou utile par le président peuvent assister à l’assemblée générale.</li>
+      <li data-fr="Le président peut également inviter des observateurs. Toutefois, l’assemblée générale peut décider de tenir une réunion à huis clos, auquel cas seuls les membres autorisés y participent." data-ar="يمكن للرئيس أيضا دعوة مراقبين. ومع ذلك، يمكن للجمع العام أن يقرر عقد اجتماع مغلق، وفي هذه الحالة يشارك فيه الأعضاء المسموح لهم فقط.">Le président peut également inviter des observateurs. Toutefois, l’assemblée générale peut décider de tenir une réunion à huis clos, auquel cas seuls les membres autorisés y participent.</li>
+    </ul>
+  </div>
+
+  <div class="statut-article">
+    <h3 data-fr="Article 11 : Compétences de l'assemblée générale" data-ar="المادة 11: اختصاصات الجمع العام">Article 11 : Compétences de l'assemblée générale</h3>
+    <p data-fr="L'assemblée générale a les attributions suivantes :" data-ar="يتمتع الجمع العام بالاختصاصات التالية:">L'assemblée générale a les attributions suivantes :</p>
+    <ul>
+      <li data-fr="Déterminer la politique générale, la direction et le contrôle de l’association." data-ar="تحديد السياسة العامة وتوجيه ومراقبة الجمعية.">Déterminer la politique générale, la direction et le contrôle de l’association.</li>
+      <li data-fr="Délibérer sur les rapports littéraires et financiers de l'exercice précédent." data-ar="التداول في التقريرين الأدبي والمالي للسنة الماضية.">Délibérer sur les rapports littéraires et financiers de l'exercice précédent.</li>
+      <li data-fr="Délibérer sur le programme de travail annuel prévu." data-ar="التداول في برنامج العمل السنوي المقرر.">Délibérer sur le programme de travail annuel prévu.</li>
+      <li data-fr="Approuver le budget pour l'exercice suivant." data-ar="المصادقة على ميزانية السنة الموالية.">Approuver le budget pour l'exercice suivant.</li>
+      <li data-fr="Élection du président et des membres du bureau administratif." data-ar="انتخاب الرئيس وأعضاء المكتب المسير.">Élection du président et des membres du bureau administratif.</li>
+      <li data-fr="Émettre toute proposition ou souhait à soumettre aux organes de l’association." data-ar="إبداء أي مقترح أو رغبة لعرضها على أجهزة الجمعية.">Émettre toute proposition ou souhait à soumettre aux organes de l’association.</li>
+      <li data-fr="Nommer un auditeur indépendant, sur proposition du bureau de direction, pour chaque exercice, afin d'examiner et de certifier les comptes de l'association." data-ar="تعيين مدقق حسابات مستقل، باقتراح من المكتب المسير، لكل سنة مالية، لفحص والمصادقة على حسابات الجمعية.">Nommer un auditeur indépendant, sur proposition du bureau de direction, pour chaque exercice, afin d'examiner et de certifier les comptes de l'association.</li>
+      <li data-fr="Fixer le montant des cotisations annuelles sur proposition du bureau de direction." data-ar="تحديد مبلغ الانخراطات السنوية باقتراح من المكتب المسير.">Fixer le montant des cotisations annuelles sur proposition du bureau de direction.</li>
+      <li data-fr="Décider de tout cas intéressant l'association." data-ar="البت في كل حالة تهم الجمعية.">Décider de tout cas intéressant l'association.</li>
+      <li data-fr="Exercer les pouvoirs qui lui sont expressément conférés par le présent statut." data-ar="ممارسة السلطات المخولة له صراحة بموجب هذا القانون الأساسي.">Exercer les pouvoirs qui lui sont expressément conférés par le présent statut.</li>
+    </ul>
+  </div>
+
+  <div class="statut-article">
+    <h3 data-fr="Article 12 : Convocation de l'assemblée générale" data-ar="المادة 12: الدعوة للجمع العام">Article 12 : Convocation de l'assemblée générale</h3>
+    <ul>
+      <li data-fr="L'assemblée générale se tient au moins une fois par an et la convocation à l'assemblée générale est adressée aux membres et aux personnes admises à participer à ses travaux, au moins sept jours avant la date fixée pour sa convocation." data-ar="ينعقد الجمع العام مرة واحدة على الأقل في السنة وتوجه الدعوة للجمع العام للأعضاء والأشخاص المسموح لهم بالمشاركة في أشغاله، قبل سبعة أيام على الأقل من التاريخ المحدد لانعقاده.">L'assemblée générale se tient au moins une fois par an et la convocation à l'assemblée générale est adressée aux membres et aux personnes admises à participer à ses travaux, au moins sept jours avant la date fixée pour sa convocation.</li>
+      <li data-fr="Les délibérations de l’assemblée générale ne sont valables que si la moitié au moins des membres disposant du droit de vote est présente (1 membre = 1 voix)." data-ar="لا تصح مداولات الجمع العام إلا إذا حضر نصف الأعضاء الذين يحق لهم التصويت على الأقل (عضو واحد = صوت واحد).">Les délibérations de l’assemblée générale ne sont valables que si la moitié au moins des membres disposant du droit de vote est présente (1 membre = 1 voix).</li>
+      <li data-fr="En cas de défaut de quorum, l'assemblée générale ordinaire est convoquée à nouveau après un délai qui ne peut être inférieur à sept jours, auquel cas les délibérations sont valables quel que soit le nombre des membres présents." data-ar="في حالة عدم اكتمال النصاب، يدعى الجمع العام العادي مرة أخرى بعد أجل لا يقل عن سبعة أيام، وفي هذه الحالة تعتبر المداولات صحيحة مهما كان عدد الأعضاء الحاضرين.">En cas de défaut de quorum, l'assemblée générale ordinaire est convoquée à nouveau après un délai qui ne peut être inférieur à sept jours, auquel cas les délibérations sont valables quel que soit le nombre des membres présents.</li>
+      <li data-fr="L'assemblée générale est présidée par le président du bureau administratif ou l'un de ses adjoints en cas d'impossibilité." data-ar="يرأس الجمع العام رئيس المكتب المسير أو أحد نوابه في حالة التعذر.">L'assemblée générale est présidée par le président du bureau administratif ou l'un de ses adjoints en cas d'impossibilité.</li>
+      <li data-fr="Les décisions de l'assemblée générale sont prises à la moitié des voix de ses membres présents plus une, soit au scrutin secret, soit à main levée, et en cas de désaccord sur le mode de scrutin, le scrutin secret est adopté." data-ar="تتخذ قرارات الجمع العام بنصف أصوات أعضائه الحاضرين زائد واحد، إما عن طريق التصويت السري أو برفع اليد، وفي حالة الخلاف حول طريقة التصويت، يعتمد التصويت السري.">Les décisions de l'assemblée générale sont prises à la moitié des voix de ses membres présents plus une, soit au scrutin secret, soit à main levée, et en cas de désaccord sur le mode de scrutin, le scrutin secret est adopté.</li>
+    </ul>
+  </div>
+
+  <div class="statut-article">
+    <h3 data-fr="Article 13 : Ordre du jour" data-ar="المادة 13: جدول الأعمال">Article 13 : Ordre du jour</h3>
+    <p data-fr="L'ordre du jour de l'assemblée générale est fixé par le bureau administratif et comprend notamment les points suivants :" data-ar="يحدد المكتب المسير جدول أعمال الجمع العام ويتضمن بالخصوص النقط التالية:">L'ordre du jour de l'assemblée générale est fixé par le bureau administratif et comprend notamment les points suivants :</p>
+    <ul>
+      <li data-fr="Vérification du l'autorité et du quorum." data-ar="التحقق من الصلاحيات والنصاب القانوني.">Vérification du l'autorité et du quorum.</li>
+      <li data-fr="L'allocution d'ouverture du président." data-ar="الكلمة الافتتاحية للرئيس.">L'allocution d'ouverture du président.</li>
+      <li data-fr="Examen du procès-verbal de l'assemblée générale ordinaire précédente." data-ar="دراسة محضر الجمع العام العادي السابق.">Examen du procès-verbal de l'assemblée générale ordinaire précédente.</li>
+      <li data-fr="Délibération sur les rapports moral et financier." data-ar="التداول في التقريرين الأدبي والمالي.">Délibération sur les rapports moral et financier.</li>
+      <li data-fr="Examen du rapport du commissaire aux comptes." data-ar="دراسة تقرير مراقب الحسابات.">Examen du rapport du commissaire aux comptes.</li>
+      <li data-fr="Examen du projet de budget pour l'exercice suivant." data-ar="دراسة مشروع الميزانية للسنة المالية الموالية.">Examen du projet de budget pour l'exercice suivant.</li>
+      <li data-fr="Nomination des examinateurs et des commissaires aux comptes." data-ar="تعيين الفاحصين ومراقبي الحسابات.">Nomination des examinateurs et des commissaires aux comptes.</li>
+      <li data-fr="Élection du bureau d'administration dans les délais impartis." data-ar="انتخاب المكتب المسير في الآجال المحددة.">Élection du bureau d'administration dans les délais impartis.</li>
+      <li data-fr="Radier ou suspendre un membre, si nécessaire." data-ar="التشطيب أو توقيف عضو، إذا لزم الأمر.">Radier ou suspendre un membre, si nécessaire.</li>
+      <li data-fr="Admission de nouveaux membres, si nécessaire." data-ar="قبول أعضاء جدد، إذا لزم الأمر.">Admission de nouveaux membres, si nécessaire.</li>
+      <li data-fr="Examiner les propositions et les souhaits soumis à l'assemblée générale par ses membres, qui doivent être communiqués au bureau de direction au moins cinq jours avant la date de l'assemblée générale." data-ar="دراسة المقترحات والرغبات المقدمة للجمع العام من طرف أعضائه، والتي يجب إرسالها إلى المكتب المسير قبل خمسة أيام على الأقل من تاريخ الجمع العام.">Examiner les propositions et les souhaits soumis à l'assemblée générale par ses membres, qui doivent être communiqués au bureau de direction au moins cinq jours avant la date de l'assemblée générale.</li>
+    </ul>
+  </div>
+
+  <div class="statut-article">
+    <h3 data-fr="Article 14 : Bureau administratif" data-ar="المادة 14: المكتب المسير">Article 14 : Bureau administratif</h3>
+    <ol>
+      <li data-fr="Le bureau Administratif est l'organe de gestion et d'administration de l'association, et est chargé: Mettre en œuvre les décisions prises par l'assemblée générale. Préparer le projet de programme de travail annuel et le soumettre à l'approbation de l'assemblée générale. Délibérer sur le projet de budget de l'association et le soumettre à l'approbation de l'assemblée générale." data-ar="المكتب المسير هو جهاز التسيير والإدارة للجمعية، ويكلف بـ: تنفيذ القرارات المتخذة من طرف الجمع العام. إعداد مشروع برنامج العمل السنوي وعرضه على مصادقة الجمع العام. التداول في مشروع ميزانية الجمعية وعرضه على مصادقة الجمع العام.">Le bureau Administratif est l'organe de gestion et d'administration de l'association, et est chargé: Mettre en œuvre les décisions prises par l'assemblée générale. Préparer le projet de programme de travail annuel et le soumettre à l'approbation de l'assemblée générale. Délibérer sur le projet de budget de l'association et le soumettre à l'approbation de l'assemblée générale.</li>
+      <li data-fr="Le président et les membres du bureau directeur sont élus au scrutin de liste pour une période de 4 ans, renouvelable une fois par l'assemblée générale de l'association." data-ar="ينتخب الرئيس وأعضاء المكتب المسير عن طريق الاقتراع باللائحة لمدة 4 سنوات، قابلة للتجديد مرة واحدة من قبل الجمع العام للجمعية.">Le président et les membres du bureau directeur sont élus au scrutin de liste pour une période de 4 ans, renouvelable une fois par l'assemblée générale de l'association.</li>
+      <li data-fr="Les listes de candidatures doivent porter les signatures certifiées des candidats et indiquer leurs noms et prénoms ainsi que leur sexe." data-ar="يجب أن تحمل لوائح الترشيح توقيعات مصادق عليها للمرشحين وتتضمن أسماءهم الشخصية والعائلية وجنسهم.">Les listes de candidatures doivent porter les signatures certifiées des candidats et indiquer leurs noms et prénoms ainsi que leur sexe.</li>
+      <li data-fr="Le bureau ne peut délibérer valablement que si la moitié au moins de ses membres constitutifs plus une voix sont présents." data-ar="لا يصح تداول المكتب إلا بحضور نصف أعضائه المكونين له زائد صوت واحد.">Le bureau ne peut délibérer valablement que si la moitié au moins de ses membres constitutifs plus une voix sont présents.</li>
+      <li data-fr="Les décisions sont prises à la majorité des voix. En cas d'égalité des voix, celle du président est prépondérante." data-ar="تتخذ القرارات بأغلبية الأصوات. وفي حالة تعادل الأصوات، يرجح صوت الرئيس.">Les décisions sont prises à la majorité des voix. En cas d'égalité des voix, celle du président est prépondérante.</li>
+      <li data-fr="Tout membre absent lors de trois réunions consécutives sans excuse est considéré comme démissionnaire du bureau de direction." data-ar="كل عضو يتغيب عن ثلاثة اجتماعات متتالية بدون عذر يعتبر مستقيلا من المكتب المسير.">Tout membre absent lors de trois réunions consécutives sans excuse est considéré comme démissionnaire du bureau de direction.</li>
+      <li data-fr="En cas de vacance du poste de président, celui-ci est remplacé temporairement par le vice président jusqu'à l'assemblée générale ordinaire la plus proche, qui élit un nouveau bureau directeur pour un nouveau mandat." data-ar="في حالة شغور منصب الرئيس، يعوض مؤقتا بنائب الرئيس حتى أقرب جمع عام عادي، الذي ينتخب مكتبا مسيرا جديدا لولاية جديدة.">En cas de vacance du poste de président, celui-ci est remplacé temporairement par le vice président jusqu'à l'assemblée générale ordinaire la plus proche, qui élit un nouveau bureau directeur pour un nouveau mandat.</li>
+      <li data-fr="Le bureau de direction se réunit au moins une fois par semestre, sur convocation de son président." data-ar="يجتمع المكتب المسير مرة واحدة على الأقل كل نصف سنة، بدعوة من رئيسه.">Le bureau de direction se réunit au moins une fois par semestre, sur convocation de son président.</li>
+      <li data-fr="La convocation doit être envoyée aux membres du bureau directeur avec l'ordre du jour au moins trois jours avant la date de la réunion." data-ar="يجب توجيه الدعوة لأعضاء المكتب المسير مع جدول الأعمال قبل ثلاثة أيام على الأقل من تاريخ الاجتماع.">La convocation doit être envoyée aux membres du bureau directeur avec l'ordre du jour au moins trois jours avant la date de la réunion.</li>
+      <li data-fr="Toute personne dont la présence est utile assiste avec voix consultative aux réunions du bureau directeur." data-ar="يحضر بصفة استشارية لاجتماعات المكتب المسير كل شخص يكون حضوره مفيدا.">Toute personne dont la présence est utile assiste avec voix consultative aux réunions du bureau directeur.</li>
+      <li data-fr="L'ordre du jour est préparé par le secrétaire général et chaque membre du bureau directeur a le droit de proposer les points qu'il souhaite inclure dans l'ordre du jour, à condition de les envoyer au secrétaire général au moins un jour avant la date de la réunion." data-ar="يعد الكاتب العام جدول الأعمال، ويحق لكل عضو في المكتب المسير اقتراح نقط لإدراجها في جدول الأعمال، شريطة إرسالها للكاتب العام قبل يوم واحد على الأقل من تاريخ الاجتماع.">L'ordre du jour est préparé par le secrétaire général et chaque membre du bureau directeur a le droit de proposer les points qu'il souhaite inclure dans l'ordre du jour, à condition de les envoyer au secrétaire général au moins un jour avant la date de la réunion.</li>
+    </ol>
+  </div>
+
+  <div class="statut-article">
+    <h3 data-fr="Article 15 : Fonctions des principaux dirigeants" data-ar="المادة 15: مهام المسيرين الرئيسيين">Article 15 : Fonctions des principaux dirigeants</h3>
+    <h4 data-fr="Le Président :" data-ar="الرئيس:">Le Président :</h4>
+    <p data-fr="1. Le président du bureau de direction est de plein droit le président de l'association et à ce titre :" data-ar="1. رئيس المكتب المسير هو بقوة القانون رئيس الجمعية، وبهذه الصفة:">1. Le président du bureau de direction est de plein droit le président de l'association et à ce titre :</p>
+    <ul>
+      <li data-fr="Représente l'association dans tous les actes relatifs à la vie civile et auprès des pouvoirs publics." data-ar="يمثل الجمعية في جميع الأعمال المتعلقة بالحياة المدنية ولدى السلطات العمومية.">Représente l'association dans tous les actes relatifs à la vie civile et auprès des pouvoirs publics.</li>
+      <li data-fr="Il exécute les décisions de l'assemblée générale et du bureau administratif." data-ar="ينفذ قرارات الجمع العام والمكتب المسير.">Il exécute les décisions de l'assemblée générale et du bureau administratif.</li>
+      <li data-fr="Il assure le fonctionnement régulier de l'association." data-ar="يضمن السير العادي للجمعية.">Il assure le fonctionnement régulier de l'association.</li>
+      <li data-fr="Prépare l'organisation de la gestion de l'association et la soumet à l'approbation du bureau directeur." data-ar="يعد تنظيم تدبير الجمعية ويعرضه على مصادقة المكتب المسير.">Prépare l'organisation de la gestion de l'association et la soumet à l'approbation du bureau directeur.</li>
+      <li data-fr="Veille au bon déroulement des assemblées générales et des réunions du bureau administratif." data-ar="يسهر على حسن سير الجموع العامة واجتماعات المكتب المسير.">Veille au bon déroulement des assemblées générales et des réunions du bureau administratif.</li>
+      <li data-fr="Il signe toutes les résolutions, la correspondance ou tout document engageant l'association." data-ar="يوقع على جميع المقررات والمراسلات أو أي وثيقة تلزم الجمعية.">Il signe toutes les résolutions, la correspondance ou tout document engageant l'association.</li>
+      <li data-fr="Autorise les dépenses, dans les limites du budget approuvé par l'assemblée générale." data-ar="يأذن بالنفقات، في حدود الميزانية المصادق عليها من طرف الجمع العام.">Autorise les dépenses, dans les limites du budget approuvé par l'assemblée générale.</li>
+      <li data-fr="Négocie avec les institutions bancaires un soutien financier à court terme." data-ar="يتفاوض مع المؤسسات البنكية بشأن دعم مالي قصير الأمد.">Négocie avec les institutions bancaires un soutien financier à court terme.</li>
+      <li data-fr="Conclut, avec l'autorisation de l'assemblée générale, des emprunts bancaires à moyen ou long terme." data-ar="يبرم، بترخيص من الجمع العام، قروضا بنكية متوسطة أو طويلة الأمد.">Conclut, avec l'autorisation de l'assemblée générale, des emprunts bancaires à moyen ou long terme.</li>
+      <li data-fr="Gère les biens de l'association, avec l'autorisation de l'assemblée générale." data-ar="يدبر ممتلكات الجمعية، بترخيص من الجمع العام.">Gère les biens de l'association, avec l'autorisation de l'assemblée générale.</li>
+      <li data-fr="Engage et licencie les employés de l'association." data-ar="يوظف ويسرح مستخدمي الجمعية.">Engage et licencie les employés de l'association.</li>
+      <li data-fr="Il peut déléguer une partie de ses pouvoirs à un vice-président qui l'assiste dans l'exercice de ses fonctions et il agit en son absence ou en cas d'empêchement." data-ar="يمكنه تفويض جزء من سلطاته لنائب الرئيس الذي يساعده في مزاولة مهامه وينوب عنه في حالة غيابه أو تعذره.">Il peut déléguer une partie de ses pouvoirs à un vice-président qui l'assiste dans l'exercice de ses fonctions et il agit en son absence ou en cas d'empêchement.</li>
+    </ul>
+
+    <h4 data-fr="Le secrétaire général :" data-ar="الكاتب العام:">Le secrétaire général :</h4>
+    <p data-fr="Le secrétaire général est chargé des tâches suivantes :" data-ar="يكلف الكاتب العام بالمهام التالية:">Le secrétaire général est chargé des tâches suivantes :</p>
+    <ul>
+      <li data-fr="Coordonner les activités des organes de l'association et suivre les relations avec les organismes partenaires." data-ar="تنسيق أنشطة أجهزة الجمعية وتتبع العلاقات مع الهيئات الشريكة.">Coordonner les activités des organes de l'association et suivre les relations avec les organismes partenaires.</li>
+      <li data-fr="Préparer les élections et les réunions de l'assemblée générale et du bureau administratif." data-ar="إعداد الانتخابات واجتماعات الجمع العام والمكتب المسير.">Préparer les élections et les réunions de l'assemblée générale et du bureau administratif.</li>
+      <li data-fr="Préparer le rapport moral de l'association à soumettre à l'approbation de l'assemblée générale." data-ar="إعداد التقرير الأدبي للجمعية لعرضه على مصادقة الجمع العام.">Préparer le rapport moral de l'association à soumettre à l'approbation de l'assemblée générale.</li>
+      <li data-fr="Préparer les procès-verbaux des délibérations de l'assemblée générale et du bureau administratif." data-ar="إعداد محاضر مداولات الجمع العام والمكتب المسير.">Préparer les procès-verbaux des délibérations de l'assemblée générale et du bureau administratif.</li>
+      <li data-fr="Le secrétaire général est assisté dans l'exercice de ses fonctions par un secrétaire général adjoint qui le remplace en cas d'absence ou d'empêchement." data-ar="يساعد الكاتب العام في أداء مهامه نائب للكاتب العام ينوب عنه في حالة الغياب أو التعذر.">Le secrétaire général est assisté dans l'exercice de ses fonctions par un secrétaire général adjoint qui le remplace en cas d'absence ou d'empêchement.</li>
+    </ul>
+
+    <h4 data-fr="Le trésorier :" data-ar="أمين المال:">Le trésorier :</h4>
+    <p data-fr="Le trésorier est chargé de :" data-ar="يكلف أمين المال بـ:">Le trésorier est chargé de :</p>
+    <ul>
+      <li data-fr="Gérer les ressources de l'association. A ce titre, il perçoit les recettes et liquide les dépenses ordonnées par le président, et tient la comptabilité de l'association, qui doit être certifiée par un trésorier." data-ar="تدبير موارد الجمعية. وبهذه الصفة، يستخلص المداخيل ويصفي النفقات المأمور بها من طرف الرئيس، ويمسك محاسبة الجمعية، التي يجب أن يصادق عليها أمين المال.">Gérer les ressources de l'association. A ce titre, il perçoit les recettes et liquide les dépenses ordonnées par le président, et tient la comptabilité de l'association, qui doit être certifiée par un trésorier.</li>
+      <li data-fr="Signer, conjointement avec le président, les chèques et les garanties de bonne fin émis au nom de l'association." data-ar="توقيع الشيكات وضمانات حسن الإنجاز الصادرة باسم الجمعية بتوقيع مشترك مع الرئيس.">Signer, conjointement avec le président, les chèques et les garanties de bonne fin émis au nom de l'association.</li>
+      <li data-fr="Préparer le projet de budget pour l'exercice suivant et le soumettre au bureau administratif pour délibération." data-ar="إعداد مشروع ميزانية السنة الموالية وعرضه على المكتب المسير للتداول.">Préparer le projet de budget pour l'exercice suivant et le soumettre au bureau administratif pour délibération.</li>
+      <li data-fr="Préparer le rapport financier de l'association à présenter à l'assemblée générale." data-ar="إعداد التقرير المالي للجمعية لتقديمه للجمع العام.">Préparer le rapport financier de l'association à présenter à l'assemblée générale.</li>
+      <li data-fr="Le trésorier est assisté dans l'exercice de ses fonctions par un trésorier adjoint qui le remplace en cas d'absence ou d'empêchement." data-ar="يساعد أمين المال في أداء مهامه نائب لأمين المال ينوب عنه في حالة الغياب أو التعذر.">Le trésorier est assisté dans l'exercice de ses fonctions par un trésorier adjoint qui le remplace en cas d'absence ou d'empêchement.</li>
+    </ul>
+  </div>
+
+  <div class="statut-chapter">
+    <h2 data-fr="Chapitre IV : Exigences financières et comptables" data-ar="الباب الرابع: المقتضيات المالية والمحاسباتية">Chapitre IV : Exigences financières et comptables</h2>
+  </div>
+
+  <div class="statut-article">
+    <h3 data-fr="Article 16 : Exercice comptable" data-ar="المادة 16: السنة المالية">Article 16 : Exercice comptable</h3>
+    <p data-fr="L'exercice comptable de l'association est une période de 12 mois commençant le 1er janvier et se terminant le 31 décembre." data-ar="السنة المالية للجمعية هي فترة 12 شهرا تبدأ في فاتح يناير وتنتهي في 31 دجنبر.">L'exercice comptable de l'association est une période de 12 mois commençant le 1er janvier et se terminant le 31 décembre.</p>
+  </div>
+
+  <div class="statut-article">
+    <h3 data-fr="Article 17 : Budget" data-ar="المادة 17: الميزانية">Article 17 : Budget</h3>
+    <ul>
+      <li data-fr="Le budget de l'association est le document prévisionnel de l'ensemble des ressources que l'association peut recevoir et de l'ensemble des dépenses qui peuvent être affectées à la satisfaction de ses besoins au cours de l'exercice comptable." data-ar="ميزانية الجمعية هي الوثيقة التوقعية لمجموع الموارد التي يمكن أن تتلقاها الجمعية ومجموع النفقات التي يمكن تخصيصها لتلبية حاجياتها خلال السنة المالية.">Le budget de l'association est le document prévisionnel de l'ensemble des ressources que l'association peut recevoir et de l'ensemble des dépenses qui peuvent être affectées à la satisfaction de ses besoins au cours de l'exercice comptable.</li>
+      <li data-fr="Le budget est préparé par le trésorier, délibéré par le bureau directeur et approuvé par l'assemblée générale." data-ar="يعد أمين المال الميزانية، ويتداول فيها المكتب المسير ويصادق عليها الجمع العام.">Le budget est préparé par le trésorier, délibéré par le bureau directeur et approuvé par l'assemblée générale.</li>
+      <li data-fr="Les ressources et les dépenses de l'association doivent être équilibrées au cours de l'exercice comptable." data-ar="يجب أن تكون موارد ونفقات الجمعية متوازنة خلال السنة المالية.">Les ressources et les dépenses de l'association doivent être équilibrées au cours de l'exercice comptable.</li>
+      <li data-fr="Le président et le trésorier exécutent le budget selon les procédures comptables précisées par le bureau directeur, sur proposition du trésorier chargé de la certification des comptes de l'association et de l'audit financier de son fonctionnement." data-ar="ينفذ الرئيس وأمين المال الميزانية وفقا للمساطر المحاسبية المحددة من طرف المكتب المسير، باقتراح من أمين المال المكلف بالمصادقة على حسابات الجمعية والافتحاص المالي لسيرها.">Le président et le trésorier exécutent le budget selon les procédures comptables précisées par le bureau directeur, sur proposition du trésorier chargé de la certification des comptes de l'association et de l'audit financier de son fonctionnement.</li>
+    </ul>
+  </div>
+
+  <div class="statut-article">
+    <h3 data-fr="Article 18 : Ressources" data-ar="المادة 18: الموارد">Article 18 : Ressources</h3>
+    <p data-fr="Les ressources de l'association proviennent des cotisations des membres, de dons, de subventions et de toutes autres ressources autorisées par la loi." data-ar="تتكون موارد الجمعية من انخراطات الأعضاء، والهبات، والدعم، وكل الموارد الأخرى المسموح بها قانونا.">Les ressources de l'association proviennent des cotisations des membres, de dons, de subventions et de toutes autres ressources autorisées par la loi.</p>
+  </div>
+
+  <div class="statut-article">
+    <h3 data-fr="Article 19 : Dépenses" data-ar="المادة 19: النفقات">Article 19 : Dépenses</h3>
+    <ol>
+      <li data-fr="L'utilisation des ressources doit être consacrée à la gestion de l'association et à la réalisation de ses objectifs. A cette fin, les dépenses de l'association sont définies dans le plan comptable qui fait apparaître les dépenses de gestion, les dépenses d'investissement et les dépenses de développement ou d'équipement." data-ar="يجب أن يخصص استعمال الموارد لتسيير الجمعية وتحقيق أهدافها. ولهذه الغاية، تحدد نفقات الجمعية في المخطط المحاسبي الذي يبرز نفقات التسيير ونفقات الاستثمار ونفقات التطوير أو التجهيز.">L'utilisation des ressources doit être consacrée à la gestion de l'association et à la réalisation de ses objectifs. A cette fin, les dépenses de l'association sont définies dans le plan comptable qui fait apparaître les dépenses de gestion, les dépenses d'investissement et les dépenses de développement ou d'équipement.</li>
+      <li data-fr="Les fonds ne peuvent être retirés qu'après la signature conjointe du président et du trésorier." data-ar="لا يمكن سحب الأموال إلا بعد التوقيع المشترك للرئيس وأمين المال.">Les fonds ne peuvent être retirés qu'après la signature conjointe du président et du trésorier.</li>
+    </ol>
+  </div>
+
+  <div class="statut-article">
+    <h3 data-fr="Article 20 : Comptabilité" data-ar="المادة 20: المحاسبة">Article 20 : Comptabilité</h3>
+    <ul>
+      <li data-fr="Il est tenu une comptabilité qui reflète les résultats de la gestion financière de l'association." data-ar="تمسك محاسبة تعكس نتائج التدبير المالي للجمعية.">Il est tenu une comptabilité qui reflète les résultats de la gestion financière de l'association.</li>
+      <li data-fr="Le contrôle a pour objet de certifier la conformité de la présentation des comptes avec les règles comptables qui leur sont applicables, qu'ils reflètent une image fidèle des opérations financières effectuées par l'association, de son patrimoine financier et de la conformité de la gestion de l'association avec les règles et obligations stipulées dans les présents statuts." data-ar="يهدف الرقابة إلى المصادقة على مطابقة تقديم الحسابات للقواعد المحاسبية المطبقة عليها، وأنها تعكس صورة صادقة للعمليات المالية المنجزة من طرف الجمعية، ولذمتها المالية ولمطابقة تسيير الجمعية للقواعد والالتزامات المنصوص عليها في هذا القانون الأساسي.">Le contrôle a pour objet de certifier la conformité de la présentation des comptes avec les règles comptables qui leur sont applicables, qu'ils reflètent une image fidèle des opérations financières effectuées par l'association, de son patrimoine financier et de la conformité de la gestion de l'association avec les règles et obligations stipulées dans les présents statuts.</li>
+      <li data-fr="Le rapport d'audit est présenté à la première réunion de l'assemblée générale qui suit sa réception par le bureau administratif." data-ar="يقدم تقرير الافتحاص في أول اجتماع للجمع العام يلي التوصل به من طرف المكتب المسير.">Le rapport d'audit est présenté à la première réunion de l'assemblée générale qui suit sa réception par le bureau administratif.</li>
+      <li data-fr="Le rapport d'audit est joint au rapport financier préparé par le trésorier, qui indique les opérations effectuées dans le cadre du budget de l'année, ainsi que l'état des états financiers de l'association." data-ar="يرفق تقرير الافتحاص بالتقرير المالي المعد من طرف أمين المال، والذي يبين العمليات المنجزة في إطار ميزانية السنة، وكذا وضعية البيانات المالية للجمعية.">Le rapport d'audit est joint au rapport financier préparé par le trésorier, qui indique les opérations effectuées dans le cadre du budget de l'année, ainsi que l'état des états financiers de l'association.</li>
+    </ul>
+  </div>
+
+  <div class="statut-chapter">
+    <h2 data-fr="Chapitre V : Dispositions diverses" data-ar="الباب الخامس: مقتضيات مختلفة">Chapitre V : Dispositions diverses</h2>
+  </div>
+
+  <div class="statut-article">
+    <h3 data-fr="Article 21 : Règlement intérieur" data-ar="المادة 21: النظام الداخلي">Article 21 : Règlement intérieur</h3>
+    <ul>
+      <li data-fr="Il est établi un règlement intérieur de l'association qui précise notamment les modalités de gestion et d'organisation des organes de l'association." data-ar="يوضع نظام داخلي للجمعية يحدد بالخصوص طرق تسيير وتنظيم أجهزة الجمعية.">Il est établi un règlement intérieur de l'association qui précise notamment les modalités de gestion et d'organisation des organes de l'association.</li>
+      <li data-fr="L'adhésion à l'association entraîne de plein droit l'adhésion à son statut et à son règlement intérieur." data-ar="الانخراط في الجمعية يترتب عنه بقوة القانون الالتزام بقانونها الأساسي ونظامها الداخلي.">L'adhésion à l'association entraîne de plein droit l'adhésion à son statut et à son règlement intérieur.</li>
+    </ul>
+  </div>
+
+  <div class="statut-article">
+    <h3 data-fr="Article 22 : Dissolution" data-ar="المادة 22: الحل">Article 22 : Dissolution</h3>
+    <p data-fr="En cas de dissolution, l'assemblée générale désigne un ou plusieurs fonctionnaires chargés de liquider l'association, de régler toutes ses dettes et de redistribuer les fonds restants à des fins non lucratives." data-ar="في حالة الحل، يعين الجمع العام موظفا أو أكثر مكلفين بتصفية الجمعية، وتسوية جميع ديونها وإعادة توزيع الأموال المتبقية لأغراض غير ربحية.">En cas de dissolution, l'assemblée générale désigne un ou plusieurs fonctionnaires chargés de liquider l'association, de régler toutes ses dettes et de redistribuer les fonds restants à des fins non lucratives.</p>
+  </div>
+
+  <div class="statut-footer">
+    <p data-fr="Fait à Oujda, le 23-12-2025" data-ar="حرر بوجدة، في 23-12-2025">Fait à Oujda, le 23-12-2025</p>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-about">
+<h3>MMSDS</h3>
+<p data-fr="Morocco Modeling, Statistic and Data Science" data-ar="جمعية المغرب للنمذجة والإحصاء وعلوم البيانات">Morocco Modeling, Statistic and Data Science</p>
+<p class="ar-name">جمعية المغرب للنمذجة والإحصاء وعلوم البيانات</p>
+<p style="margin-top:12px" data-fr="Faculté des Sciences d'Oujda (FSO), Boulevard Mohammed VI, BP 717, Oujda 60000, Maroc" data-ar="كلية العلوم بوجدة، شارع محمد السادس، ص.ب 717، وجدة 60000، المغرب">Faculté des Sciences d'Oujda (FSO), Boulevard Mohammed VI, BP 717, Oujda 60000, Maroc</p>
+<p>asso-mmsds25@gmail.com</p>
+</div>
+<div class="footer-links">
+<h3 data-fr="Liens rapides" data-ar="روابط سريعة">Liens rapides</h3>
+<a href="index.html#accueil" data-fr="Accueil" data-ar="الرئيسية">Accueil</a>
+<a href="index.html#apropos" data-fr="À propos" data-ar="من نحن">À propos</a>
+<a href="index.html#bureau" data-fr="Bureau" data-ar="المكتب">Bureau</a>
+<a href="index.html#activites" data-fr="Activités" data-ar="الأنشطة">Activités</a>
+<a href="index.html#adhesion" data-fr="Adhésion" data-ar="الانخراط">Adhésion</a>
+<a href="statut.html" data-fr="Statut" data-ar="القانون الأساسي">Statut</a>
+<a href="index.html#contact" data-fr="Contact" data-ar="اتصل بنا">Contact</a>
+</div>
+<div class="footer-links">
+<h3 data-fr="Domaines" data-ar="المجالات">Domaines</h3>
+<a href="index.html#apropos">Modélisation</a>
+<a href="index.html#apropos">Statistique</a>
+<a href="index.html#apropos">Data Science</a>
+<a href="index.html#apropos">Intelligence artificielle</a>
+<a href="index.html#apropos">Probabilités</a>
+<a href="index.html#apropos">Finance</a>
+</div>
+</div>
+<div class="footer-bottom">
+<p data-fr="&copy; 2026 Morocco Modeling, Statistic and Data Science — MMSDS. Tous droits réservés." data-ar="&copy; 2026 جمعية المغرب للنمذجة والإحصاء وعلوم البيانات — MMSDS. جميع الحقوق محفوظة.">&copy; 2026 Morocco Modeling, Statistic and Data Science — MMSDS. Tous droits réservés.</p>
+</div>
+</div>
+</footer>
+
+<!-- SCROLL TOP -->
+<button class="scroll-top" id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-chevron-up"></i></button>
+<script src="js/main.js"></script>
+</body>
+</html>
