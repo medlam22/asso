@@ -45,14 +45,14 @@ for (let i = 0; i < menuLength; i++) {
   
   function initParticles() {
     particles = [];
-    const numParticles = Math.floor((w * h) / 10000);
+    const numParticles = Math.floor((w * h) / 7200);
     for (let i = 0; i < numParticles; i++) {
       particles.push({
         x: Math.random() * w,
         y: Math.random() * h,
         vx: (Math.random() - 0.5) * 0.4,
         vy: (Math.random() - 0.5) * 0.4,
-        radius: Math.random() * 2 + 1
+        radius: Math.random() * 2.4 + 1.2
       });
     }
   }
@@ -71,7 +71,7 @@ for (let i = 0; i < menuLength; i++) {
       if (p.x < 0 || p.x > w) p.vx *= -1;
       if (p.y < 0 || p.y > h) p.vy *= -1;
       
-      ctx.fillStyle = index % 3 === 0 ? '#a62c2b' : '#157a6e';
+      ctx.fillStyle = index % 3 === 0 ? 'rgba(240, 210, 206, 0.9)' : 'rgba(62, 209, 192, 0.9)';
       
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
@@ -79,16 +79,17 @@ for (let i = 0; i < menuLength; i++) {
     });
     
     // Draw lines between close particles
-    ctx.lineWidth = 0.6;
+    ctx.lineWidth = 1;
     for (let i = 0; i < particles.length; i++) {
       for (let j = i + 1; j < particles.length; j++) {
         const dx = particles[i].x - particles[j].x;
         const dy = particles[i].y - particles[j].y;
         const dist = Math.sqrt(dx * dx + dy * dy);
         
-        if (dist < 130) {
+        if (dist < 150) {
           ctx.beginPath();
-          ctx.strokeStyle = `rgba(21, 139, 139, ${1 - dist/130})`;
+          const opacity = (1 - dist / 150) * 0.7;
+          ctx.strokeStyle = `rgba(109, 231, 217, ${opacity})`;
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
           ctx.stroke();
