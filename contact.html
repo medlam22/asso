@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .contact-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
+            max-width: 760px;
+            margin: 0 auto;
         }
         .contact-info {
             background: var(--light-gray);
@@ -34,50 +33,6 @@
         }
         .contact-info-item p {
             color: #555;
-        }
-        .contact-form {
-            background: var(--white);
-            padding: 40px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
-            border: 1px solid var(--border-color);
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        .form-control {
-            width: 100%;
-            padding: 12px 15px;
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            font-family: var(--font-family);
-            transition: var(--transition);
-        }
-        .form-control:focus {
-            outline: none;
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 3px rgba(21, 139, 126, 0.18);
-        }
-        textarea.form-control {
-            resize: vertical;
-            min-height: 120px;
-        }
-        .map-container {
-            margin-top: 50px;
-            height: 400px;
-            background-color: #ddd;
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-            font-size: 1.2rem;
-        }
-        @media (max-width: 768px) {
-            .contact-container {
-                grid-template-columns: 1fr;
-            }
         }
     </style>
 </head>
@@ -135,7 +90,7 @@
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <p>asso-mmsds25@gmail.com</p>
+                            <p>asso-mmsds@gmail.com</p>
                         </div>
                     </div>
                     
@@ -147,31 +102,6 @@
                     </div>
                 </div>
 
-                <!-- Contact Form -->
-                <div class="contact-form">
-                    <h3 style="margin-bottom: 30px; color: var(--dark-color); font-size: 1.5rem;">Envoyez-nous un message</h3>
-                    <form action="#" method="POST">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Votre nom complet" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Votre adresse email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Sujet" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" placeholder="Votre message..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer le message</button>
-                    </form>
-                </div>
-            </div>
-
-            <!-- Map -->
-            <div class="map-container">
-                <p><i class="fas fa-map" style="margin-right: 10px;"></i> [Intégration Google Maps ici]</p>
-                <!-- Code d'intégration Google Maps à insérer ici -->
             </div>
         </div>
     </section>
