@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - MMSDS Association</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        .contact-info {
+            background: var(--light-gray);
+            padding: 40px;
+            border-radius: var(--border-radius);
+        }
+        .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+        .contact-info-item i {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+        .contact-info-item h4 {
+            margin-bottom: 5px;
+            color: var(--dark-color);
+        }
+        .contact-info-item p {
+            color: #555;
+        }
+        .contact-form {
+            background: var(--white);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            border: 1px solid var(--border-color);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-family: var(--font-family);
+            transition: var(--transition);
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(21, 139, 126, 0.18);
+        }
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .map-container {
+            margin-top: 50px;
+            height: 400px;
+            background-color: #ddd;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 1.2rem;
+        }
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/MSDDS.png" alt="MMSDS Logo" style="height: 60px;">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">À propos</a></li>
+                    <li class="nav-item"><a href="objectives.html" class="nav-link">Objectifs</a></li>
+                    <li class="nav-item"><a href="activities.html" class="nav-link">Activités</a></li>
+                    <li class="nav-item"><a href="instances.html" class="nav-link">Instances</a></li>
+                    <li class="nav-item"><a href="partners.html" class="nav-link">Partenaires</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link">Galerie</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link">Actualités</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <p>Une question ? Une proposition de partenariat ? N'hésitez pas à nous écrire.</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-container">
+                
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3 style="margin-bottom: 30px; color: var(--dark-color); font-size: 1.5rem;">Informations de Contact</h3>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>Faculté des Sciences d'Oujda (FSO)<br>Boulevard Mohammed VI, BP 717<br>Oujda 60000, Maroc</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>asso-mmsds25@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 40px;">
+                        <h4 style="margin-bottom: 15px; color: var(--dark-color);">Suivez-nous</h4>
+                        <a href="#" style="display: inline-block; width: 40px; height: 40px; background: var(--primary-color); color: white; text-align: center; line-height: 40px; border-radius: 50%; margin-right: 10px; transition: var(--transition);"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" style="display: inline-block; width: 40px; height: 40px; background: var(--primary-color); color: white; text-align: center; line-height: 40px; border-radius: 50%; margin-right: 10px; transition: var(--transition);"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="display: inline-block; width: 40px; height: 40px; background: var(--primary-color); color: white; text-align: center; line-height: 40px; border-radius: 50%; transition: var(--transition);"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 30px; color: var(--dark-color); font-size: 1.5rem;">Envoyez-nous un message</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Votre nom complet" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Votre adresse email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Sujet" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Votre message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="map-container">
+                <p><i class="fas fa-map" style="margin-right: 10px;"></i> [Intégration Google Maps ici]</p>
+                <!-- Code d'intégration Google Maps à insérer ici -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-widget">
+                    <h4>MMSDS Association</h4>
+                    <p>Morocco Modeling, Statistic and Data Science.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MMSDS Association. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
