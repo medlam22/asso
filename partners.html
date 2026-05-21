@@ -44,6 +44,14 @@
             color: #666;
             font-size: 0.9rem;
         }
+        .research-grid {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 360px));
+            gap: 20px;
+        }
+        .research-grid .partner-logo img {
+            max-width: 240px;
+            max-height: 135px;
+        }
         .partner-section-title {
             margin: 40px 0 20px;
             color: var(--secondary-color);
@@ -118,9 +126,9 @@
             </div>
 
             <h3 class="partner-section-title">Laboratoires de Recherche</h3>
-            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+            <div class="card-grid research-grid">
                 <div class="partner-logo">
-                    <i class="fas fa-flask" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 16px;"></i>
+                    <img src="img/lamsd-logo.png" alt="LaMSD">
                     <h4>LaMSD</h4>
                     <p>Laboratoire de Modélisation Stochastique et Déterministe</p>
                 </div>
