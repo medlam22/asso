@@ -66,6 +66,161 @@
         .gallery-item:hover .gallery-overlay {
             opacity: 1;
         }
+        .album-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
+            gap: 24px;
+        }
+        .album-card {
+            position: relative;
+            min-height: 250px;
+            padding: 0;
+            border: 0;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            cursor: pointer;
+            text-align: left;
+            background: var(--white);
+            box-shadow: var(--box-shadow);
+            border: 1px solid var(--border-color);
+        }
+        .album-visual {
+            min-height: 120px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background:
+                linear-gradient(135deg, rgba(21, 139, 126, 0.12), rgba(181, 77, 36, 0.12)),
+                var(--light-gray);
+            color: var(--dark-color);
+            transition: var(--transition);
+        }
+        .album-card:hover .album-visual {
+            background:
+                linear-gradient(135deg, rgba(21, 139, 126, 0.18), rgba(181, 77, 36, 0.18)),
+                var(--light-gray);
+        }
+        .album-visual strong {
+            display: block;
+            color: var(--primary-color);
+            font-size: 2rem;
+            line-height: 1;
+        }
+        .album-visual small {
+            display: block;
+            margin-top: 8px;
+            color: #555;
+            font-weight: 700;
+        }
+        .album-content {
+            padding: 18px;
+            color: var(--dark-color);
+            background: var(--white);
+        }
+        .album-content span {
+            display: inline-block;
+            margin-bottom: 8px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            text-transform: uppercase;
+        }
+        .album-content h3 {
+            margin-bottom: 8px;
+            color: var(--dark-color);
+        }
+        .album-content p {
+            margin-bottom: 14px;
+            color: #555;
+            font-size: 0.95rem;
+        }
+        .album-count {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+        }
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            background: rgba(0, 0, 0, 0.92);
+        }
+        .lightbox.open {
+            display: flex;
+        }
+        .lightbox-stage {
+            width: min(1100px, calc(100vw - 120px));
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .lightbox-stage img {
+            max-width: 100%;
+            max-height: 82vh;
+            border-radius: var(--border-radius);
+            object-fit: contain;
+            background: #111;
+        }
+        .lightbox-caption {
+            margin-top: 12px;
+            color: var(--white);
+            font-weight: 600;
+        }
+        .lightbox-btn {
+            position: absolute;
+            width: 46px;
+            height: 46px;
+            border: 0;
+            border-radius: 50%;
+            color: var(--white);
+            background: rgba(255, 255, 255, 0.16);
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+        .lightbox-btn:hover {
+            background: var(--primary-color);
+        }
+        .lightbox-close {
+            top: 22px;
+            right: 22px;
+        }
+        .lightbox-prev {
+            left: 22px;
+        }
+        .lightbox-next {
+            right: 22px;
+        }
+        @media (max-width: 768px) {
+            .lightbox {
+                padding: 16px;
+            }
+            .lightbox-stage {
+                width: calc(100vw - 32px);
+            }
+            .lightbox-stage img {
+                max-height: 76vh;
+            }
+            .lightbox-btn {
+                width: 40px;
+                height: 40px;
+            }
+            .lightbox-prev {
+                left: 10px;
+            }
+            .lightbox-next {
+                right: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -104,57 +259,33 @@
 
     <section class="section">
         <div class="container">
-            <!-- Filtres -->
-            <div class="filter-container">
-                <button class="filter-btn active">Toutes les images</button>
-                <button class="filter-btn">Congrès</button>
-                <button class="filter-btn">Séminaires</button>
-                <button class="filter-btn">Affiches & Programmes</button>
-            </div>
-
-            <!-- Grille d'images -->
-            <div class="gallery-grid">
-                <!-- Image Item -->
-                <div class="gallery-item">
-                    <i class="fas fa-image"></i>
-                    <div class="gallery-overlay">
-                        <h4>Photo Congrès 2025</h4>
+            <div class="album-grid">
+                <button class="album-card" id="open-ssads-gallery" type="button">
+                    <div class="album-visual">
+                        <strong>SSADS'25</strong>
+                        <small>15-16 octobre 2025 · Oujda</small>
                     </div>
-                </div>
-                <div class="gallery-item">
-                    <i class="fas fa-image"></i>
-                    <div class="gallery-overlay">
-                        <h4>Affiche Séminaire</h4>
+                    <div class="album-content">
+                        <span>Album photo</span>
+                        <h3>Photos SSADS'25</h3>
+                        <p>Revivez les moments forts du congrès SSADS'25 à Oujda.</p>
+                        <div class="album-count"><i class="fas fa-images"></i> 42 photos</div>
                     </div>
-                </div>
-                <div class="gallery-item">
-                    <i class="fas fa-image"></i>
-                    <div class="gallery-overlay">
-                        <h4>Atelier de formation</h4>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <i class="fas fa-image"></i>
-                    <div class="gallery-overlay">
-                        <h4>Remise des prix</h4>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <i class="fas fa-image"></i>
-                    <div class="gallery-overlay">
-                        <h4>Photo de groupe</h4>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <i class="fas fa-image"></i>
-                    <div class="gallery-overlay">
-                        <h4>Intervention</h4>
-                    </div>
-                </div>
+                </button>
             </div>
         </div>
     </section>
 
+
+    <div class="lightbox" id="photo-lightbox" aria-hidden="true">
+        <button class="lightbox-btn lightbox-close" type="button" id="lightbox-close" aria-label="Fermer"><i class="fas fa-times"></i></button>
+        <button class="lightbox-btn lightbox-prev" type="button" id="lightbox-prev" aria-label="Photo précédente"><i class="fas fa-chevron-left"></i></button>
+        <div class="lightbox-stage">
+            <img id="lightbox-image" src="" alt="">
+            <p class="lightbox-caption" id="lightbox-caption"></p>
+        </div>
+        <button class="lightbox-btn lightbox-next" type="button" id="lightbox-next" aria-label="Photo suivante"><i class="fas fa-chevron-right"></i></button>
+    </div>
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -164,5 +295,94 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script>
+        const ssadsPhotos = [
+            { src: 'img/ssads25/DSC_0949.JPG', alt: "SSADS'25 - Photo 01" },
+            { src: 'img/ssads25/DSC_0004.JPG', alt: "SSADS'25 - Photo 02" },
+            { src: 'img/ssads25/DSC_0011.JPG', alt: "SSADS'25 - Photo 03" },
+            { src: 'img/ssads25/DSC_0013.JPG', alt: "SSADS'25 - Photo 04" },
+            { src: 'img/ssads25/DSC_0035.JPG', alt: "SSADS'25 - Photo 05" },
+            { src: 'img/ssads25/DSC_0036.JPG', alt: "SSADS'25 - Photo 06" },
+            { src: 'img/ssads25/DSC_0733.JPG', alt: "SSADS'25 - Photo 07" },
+            { src: 'img/ssads25/DSC_0738.JPG', alt: "SSADS'25 - Photo 08" },
+            { src: 'img/ssads25/DSC_0741.JPG', alt: "SSADS'25 - Photo 09" },
+            { src: 'img/ssads25/DSC_0751.JPG', alt: "SSADS'25 - Photo 10" },
+            { src: 'img/ssads25/DSC_0752.JPG', alt: "SSADS'25 - Photo 11" },
+            { src: 'img/ssads25/DSC_0757.JPG', alt: "SSADS'25 - Photo 12" },
+            { src: 'img/ssads25/DSC_0764.JPG', alt: "SSADS'25 - Photo 13" },
+            { src: 'img/ssads25/DSC_0768.JPG', alt: "SSADS'25 - Photo 14" },
+            { src: 'img/ssads25/DSC_0771.JPG', alt: "SSADS'25 - Photo 15" },
+            { src: 'img/ssads25/DSC_0777.JPG', alt: "SSADS'25 - Photo 16" },
+            { src: 'img/ssads25/DSC_0791.JPG', alt: "SSADS'25 - Photo 17" },
+            { src: 'img/ssads25/DSC_0792.JPG', alt: "SSADS'25 - Photo 18" },
+            { src: 'img/ssads25/DSC_0799.JPG', alt: "SSADS'25 - Photo 19" },
+            { src: 'img/ssads25/DSC_0803.JPG', alt: "SSADS'25 - Photo 20" },
+            { src: 'img/ssads25/DSC_0809.JPG', alt: "SSADS'25 - Photo 21" },
+            { src: 'img/ssads25/DSC_0812.JPG', alt: "SSADS'25 - Photo 22" },
+            { src: 'img/ssads25/DSC_0814.JPG', alt: "SSADS'25 - Photo 23" },
+            { src: 'img/ssads25/DSC_0828.JPG', alt: "SSADS'25 - Photo 24" },
+            { src: 'img/ssads25/DSC_0837.JPG', alt: "SSADS'25 - Photo 25" },
+            { src: 'img/ssads25/DSC_0838.JPG', alt: "SSADS'25 - Photo 26" },
+            { src: 'img/ssads25/DSC_0840.JPG', alt: "SSADS'25 - Photo 27" },
+            { src: 'img/ssads25/DSC_0848.JPG', alt: "SSADS'25 - Photo 28" },
+            { src: 'img/ssads25/DSC_0853.JPG', alt: "SSADS'25 - Photo 29" },
+            { src: 'img/ssads25/DSC_0859.JPG', alt: "SSADS'25 - Photo 30" },
+            { src: 'img/ssads25/DSC_0860.JPG', alt: "SSADS'25 - Photo 31" },
+            { src: 'img/ssads25/DSC_0879.JPG', alt: "SSADS'25 - Photo 32" },
+            { src: 'img/ssads25/DSC_0885.JPG', alt: "SSADS'25 - Photo 33" },
+            { src: 'img/ssads25/DSC_0889.JPG', alt: "SSADS'25 - Photo 34" },
+            { src: 'img/ssads25/DSC_0897.JPG', alt: "SSADS'25 - Photo 35" },
+            { src: 'img/ssads25/DSC_0913.JPG', alt: "SSADS'25 - Photo 36" },
+            { src: 'img/ssads25/DSC_0015.JPG', alt: "SSADS'25 - Photo 37" },
+            { src: 'img/ssads25/DSC_0954.JPG', alt: "SSADS'25 - Photo 38" },
+            { src: 'img/ssads25/DSC_0990.JPG', alt: "SSADS'25 - Photo 39" },
+            { src: 'img/ssads25/DSC_0992.JPG', alt: "SSADS'25 - Photo 40" },
+            { src: 'img/ssads25/DSC_0993.JPG', alt: "SSADS'25 - Photo 41" },
+            { src: 'img/ssads25/DSC_0998.JPG', alt: "SSADS'25 - Photo 42" }
+        ];
+
+        const lightbox = document.getElementById('photo-lightbox');
+        const lightboxImage = document.getElementById('lightbox-image');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const openGalleryButton = document.getElementById('open-ssads-gallery');
+        let currentPhoto = 0;
+
+        function showPhoto(index) {
+            currentPhoto = (index + ssadsPhotos.length) % ssadsPhotos.length;
+            const photo = ssadsPhotos[currentPhoto];
+            lightboxImage.src = photo.src;
+            lightboxImage.alt = photo.alt;
+            lightboxCaption.textContent = photo.alt + ' / ' + ssadsPhotos.length;
+        }
+
+        function openLightbox(index) {
+            showPhoto(index);
+            lightbox.classList.add('open');
+            lightbox.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('open');
+            lightbox.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        openGalleryButton.addEventListener('click', () => openLightbox(0));
+        document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+        document.getElementById('lightbox-prev').addEventListener('click', () => showPhoto(currentPhoto - 1));
+        document.getElementById('lightbox-next').addEventListener('click', () => showPhoto(currentPhoto + 1));
+
+        lightbox.addEventListener('click', (event) => {
+            if (event.target === lightbox) closeLightbox();
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (!lightbox.classList.contains('open')) return;
+            if (event.key === 'Escape') closeLightbox();
+            if (event.key === 'ArrowLeft') showPhoto(currentPhoto - 1);
+            if (event.key === 'ArrowRight') showPhoto(currentPhoto + 1);
+        });
+    </script>
 </body>
 </html>

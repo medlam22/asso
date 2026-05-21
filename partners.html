@@ -9,20 +9,40 @@
     <style>
         .partner-logo {
             width: 100%;
-            height: 150px;
+            min-height: 190px;
+            padding: 24px;
             background-color: var(--white);
             border: 1px solid var(--border-color);
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             border-radius: var(--border-radius);
-            font-size: 1.5rem;
-            color: #999;
+            text-align: center;
+            color: var(--dark-color);
             transition: var(--transition);
         }
         .partner-logo:hover {
             box-shadow: var(--box-shadow);
             border-color: var(--primary-color);
+        }
+        .partner-logo img {
+            max-width: 150px;
+            max-height: 105px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            margin-bottom: 16px;
+        }
+        .partner-logo h4 {
+            margin-bottom: 6px;
+            color: var(--dark-color);
+            font-size: 1rem;
+        }
+        .partner-logo p {
+            margin: 0;
+            color: #666;
+            font-size: 0.9rem;
         }
         .partner-section-title {
             margin: 40px 0 20px;
@@ -75,21 +95,35 @@
 
             <h3 class="partner-section-title">Partenaires Institutionnels & Universitaires</h3>
             <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
-                <div class="partner-logo">Logo Université 1</div>
-                <div class="partner-logo">Logo Faculté 1</div>
-                <div class="partner-logo">Logo Institution</div>
+                <a href="https://ump.ma/" target="_blank" rel="noopener noreferrer" class="partner-logo">
+                    <img src="img/ump.png" alt="Université Mohammed Premier">
+                    <h4>Université Mohammed Premier</h4>
+                    <p>Oujda</p>
+                </a>
+                <a href="http://fso.ump.ma/" target="_blank" rel="noopener noreferrer" class="partner-logo">
+                    <img src="img/fso.png" alt="Faculté des Sciences d'Oujda">
+                    <h4>Faculté des Sciences d'Oujda</h4>
+                    <p>Université Mohammed Premier</p>
+                </a>
+                <a href="http://ensao.ump.ma/" target="_blank" rel="noopener noreferrer" class="partner-logo">
+                    <img src="img/ensao.png" alt="École Nationale des Sciences Appliquées d'Oujda">
+                    <h4>ENSA Oujda</h4>
+                    <p>École Nationale des Sciences Appliquées</p>
+                </a>
+                <a href="http://droit.ump.ma/" target="_blank" rel="noopener noreferrer" class="partner-logo">
+                    <img src="img/fsjes.png" alt="Faculté des Sciences Juridiques, Économiques et Sociales d'Oujda">
+                    <h4>FSJES Oujda</h4>
+                    <p>Faculté des Sciences Juridiques, Économiques et Sociales</p>
+                </a>
             </div>
 
             <h3 class="partner-section-title">Laboratoires de Recherche</h3>
             <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
-                <div class="partner-logo">Logo Labo 1</div>
-                <div class="partner-logo">Logo Labo 2</div>
-            </div>
-
-            <h3 class="partner-section-title">Partenaires Socio-économiques</h3>
-            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
-                <div class="partner-logo">Logo Entreprise 1</div>
-                <div class="partner-logo">Logo Sponsor 1</div>
+                <div class="partner-logo">
+                    <i class="fas fa-flask" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 16px;"></i>
+                    <h4>LaMSD</h4>
+                    <p>Laboratoire de Modélisation Stochastique et Déterministe</p>
+                </div>
             </div>
         </div>
     </section>
